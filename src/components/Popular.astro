@@ -1,0 +1,24 @@
+---
+import Card from './Card.astro';
+const { title } = Astro.props;
+---
+
+<div class="grow flex justify-center items-center">
+	<div class="space-y-4">
+		<div class="flex text-xl font-semibold text-gray-800">{title} 
+			<span class="flex items-center">
+				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" aria-hidden="true" role="presentation" focusable="false" class="ml-1 mt-1 size-3 fill-current text-gray-800 stroke-current stroke-5">
+					<path fill="none" d="m12 4 11.3 11.3a1 1 0 0 1 0 1.4L12 28"></path>
+				</svg>
+			</span>
+		</div>
+		<div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-3">
+			<Card/>
+			<Card/>
+			<Card/>
+			<Card/>
+			<Card/>
+			<Card/>
+		</div>
+	</div>
+</div>
