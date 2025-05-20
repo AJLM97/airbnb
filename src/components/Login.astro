@@ -1,20 +1,3 @@
-<button data-modal-target="default-modal" data-modal-toggle="default-modal" type="button" class="h-10 w-10 justify-center inline-flex items-center relative rounded-full bg-gray-200 hover:bg-gray-300">
-    <svg
-        viewBox="0 0 32 32"
-        xmlns="http://www.w3.org/2000/svg"
-        aria-hidden="true"
-        role="presentation"
-        focusable="false"
-        style="display: block; fill: none; height: 16px; width: 16px; stroke: currentcolor; stroke-width: 3; overflow: visible;"
-    >
-        <g fill="none" fill-rule="nonzero">
-            <path d="m2 16h28"></path>
-            <path d="m2 24h28"></path>
-            <path d="m2 8h28"></path>
-        </g>
-    </svg>
-</button>
-
 <div id="default-modal" tabindex="-1" aria-hidden="true" class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-full bg-black/50">
       <div class="relative p-4 w-full max-w-2xl max-h-full">
           <!-- Modal content -->
@@ -48,7 +31,7 @@
 
   // select the two elements that we'll work with
   const $buttonElement: HTMLElement | null = document.querySelector('#button');
-  const $modalElement: HTMLElement | null = document.querySelector('#defaultModal');
+  const $modalElement: HTMLElement | null = document.querySelector('#default-modal');
 
   // create a new modal component
   const modal = new Modal($modalElement);

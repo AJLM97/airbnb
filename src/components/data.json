@@ -1,0 +1,80 @@
+[
+    {
+        "room": "1322664451709465910",
+        "title": "Divino 2 ambientes. Ubicación 10",
+        "host": "Mariano",
+        "avatar": "https://a0.muscache.com/im/pictures/user/f1ba96b5-1ef5-4068-9488-12e966cdef44.jpg",
+        "years": "7",
+        "img": [
+            "https://a0.muscache.com/im/pictures/hosting/Hosting-1322664451709465910/original/f69011ae-0239-43d9-b983-f14d86995391.jpeg",
+            "https://a0.muscache.com/im/pictures/hosting/Hosting-1322664451709465910/original/cbc27bbd-2251-495b-8233-49f70cdec2b3.jpeg"
+            ],
+        "price": "67",
+        "rating": "5,0"
+    },
+    {
+        "room": "1234198004724088150",
+        "title": "Obelisco: Gran desayuno de cortesía.",
+        "host": "Guillermo",
+        "avatar": "https://a0.muscache.com/im/pictures/user/bf9caa15-7f4a-4241-a1a8-56e5f2ca05ed.jpg",
+        "years": "3",
+        "img": [
+            "https://a0.muscache.com/im/pictures/airflow/Hosting-1234198004724088150/original/0c57c200-7940-46a1-87b4-8e30d5790558.jpg",
+            "https://a0.muscache.com/im/pictures/airflow/Hosting-1234198004724088150/original/ef482dd5-a2cf-4bd3-b3c4-2fd3fab8c409.jpg"
+        ],
+        "price": "76",
+        "rating": "4,97"
+    },
+    {
+        "room": "1055825900442352205",
+        "title": "¡Ubicación perfecta! Centro BA",
+        "host": "Nacho & Carla",
+        "avatar": "https://a0.muscache.com/im/pictures/user/8d1b66d7-ea64-477b-a617-402b46264490.jpg",
+        "years": "6",
+        "img": [
+            "https://a0.muscache.com/im/pictures/miso/Hosting-1055825900442352205/original/8360cbd8-c840-4b3a-a02b-1e35c81d8a02.jpeg",
+            "https://a0.muscache.com/im/pictures/miso/Hosting-1055825900442352205/original/3d8b7dc1-97e2-499b-a989-eee274df8f66.jpeg"
+        ],
+        "price": "78",
+        "rating": "4,99"
+    },
+    {
+        "room": "2227001",
+        "title": "Acogedora habitación tamaño queen en un piso con un gran patio.",
+        "host": "Mati & Cande",
+        "avatar": "https://a0.muscache.com/im/users/10653064/profile_pic/1439746381/original.jpg",
+        "years": "11",
+        "img": [
+            "https://a0.muscache.com/im/pictures/miso/Hosting-2227001/original/b9c0e687-8623-48b5-9af2-e3a043cac27b.jpeg",
+            "https://a0.muscache.com/im/pictures/miso/Hosting-2227001/original/4518a68b-a333-45dc-9d76-0222a717f6ba.jpeg"
+        ],
+        "price": "29",
+        "rating": "4,79"
+    },
+    {
+        "room": "1397152651937400106",
+        "title": "Estudio de lujo en Caballito",
+        "host": "Carolina",
+        "avatar": "https://a0.muscache.com/im/pictures/user/5c808bfe-95ef-4334-b0f9-19db775e09cb.jpg",
+        "years": "0",
+        "img": [
+            "https://a0.muscache.com/im/pictures/hosting/Hosting-1397152651937400106/original/1f4bb8b9-ef69-485f-9c53-8532713c3d25.jpeg",
+            "https://a0.muscache.com/im/pictures/hosting/Hosting-1397152651937400106/original/3615822d-125e-40ef-a479-891aa31a5b4d.jpeg"
+        ],
+        "price": "72",
+        "rating": "5,00"
+    },
+    {
+        "room": "1355306942054034367",
+        "title": "Luminoso, renovado, cerca de todo! te encantará!",
+        "host": "Hugo Leonardo",
+        "avatar": "https://a0.muscache.com/im/pictures/user/User/original/bf808512-eb1e-4fa1-8598-1c1596a12a98.jpeg",
+        "years": "0",
+        "img": [
+            "https://a0.muscache.com/im/pictures/hosting/Hosting-U3RheVN1cHBseUxpc3Rpbmc6MTM1NTMwNjk0MjA1NDAzNDM2Nw==/original/6144331e-c992-4c82-a0fa-614223a26186.jpeg",
+            "https://a0.muscache.com/im/pictures/hosting/Hosting-U3RheVN1cHBseUxpc3Rpbmc6MTM1NTMwNjk0MjA1NDAzNDM2Nw==/original/54c2f048-4fd1-4d50-9f3b-c290a21955d9.jpeg"
+        ],
+        "price": "64",
+        "rating": "5,0"
+    }
+]
