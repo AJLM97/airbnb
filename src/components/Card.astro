@@ -1,14 +1,14 @@
 ---
 import data from "../components/data.json";
 
-const { room } = Astro.props;
+const { room, lang } = Astro.props;
 const page = data.find((page) => page.room === room);
 if (!page) return Astro.redirect("/404");
 const { title, img , price, rating} = page;
 ---
 
 <div class="w-full">
-  <a href=`/rooms/${room}`>
+  <a href=`/${lang}/rooms/${room}`>
     <img src={img[0]}
         alt="" 
         class="w-full aspect-square object-cover rounded-3xl pb-1"
@@ -16,7 +16,7 @@ const { title, img , price, rating} = page;
   </a>
   <div class="text-sm font-medium text-gray-800">{title}</div>
   <div class="text-xs text-gray-500 flex items-center gap-1">
-      <div>${price} USD for 2 nights</div>
+      <div>${price} {lang == "en" ? "USD for 2 nights" : "USD por 2 noches"}</div>
       <div>★{rating}</div>
   </div>
 </div>

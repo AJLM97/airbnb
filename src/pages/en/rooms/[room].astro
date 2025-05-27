@@ -1,7 +1,7 @@
 ---
-import Layout from "../../layouts/Layout.astro";
-import "../../styles/global.css";
-import data from "../../components/data.json";
+import Layout from "../../../layouts/en.astro";
+import "../../../styles/global.css";
+import data from "../../../components/data.json";
 
 export async function getStaticPaths() {
     return data.map(({ room, title, host, img, price, rating, avatar, years }) => {
@@ -40,7 +40,9 @@ const { title, host, img, price, rating, avatar, years } = Astro.props;
                     <div class="text-md text-gray-500">{years} years as host</div>
                 </div>
             </div>
-            <div class="flex py-4 px-16 rounded-3xl text-white bg-red-500 items-center justify-center text-xl font-medium cursor-pointer ">Reserve</div>
+            <button data-modal-target="login-modal" data-modal-toggle="login-modal" type="button" class="flex py-4 px-16 rounded-3xl text-white bg-red-500 items-center justify-center text-xl font-medium cursor-pointer">
+                Reserve
+            </button>
         </div>
 	</div>
 </Layout>

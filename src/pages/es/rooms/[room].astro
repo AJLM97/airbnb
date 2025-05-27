@@ -1,0 +1,48 @@
+---
+import Layout from "../../../layouts/es.astro";
+import "../../../styles/global.css";
+import data from "../../../components/data.json";
+
+export async function getStaticPaths() {
+    return data.map(({ room, title, host, img, price, rating, avatar, years }) => {
+        return {
+        params: { room },
+        props: { title, host, img, price, rating, avatar, years },
+        };
+    });
+}
+const { title, host, img, price, rating, avatar, years } = Astro.props;
+---
+
+<Layout>
+	<div class="p-8 space-y-6">
+        <div class="text-3xl font-medium text-gray-800">{title}</div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 pb-1">
+            {img.map((item) => 
+                <img src={item}
+                    alt="" 
+                    class="w-full aspect-3/2 object-cover rounded-3xl"
+                />
+            )}
+        </div>
+        <div class="text-3xl font-medium text-gray-800 flex items-center gap-1 md:gap-4">
+            <div>${price} USD por 2 noches</div>
+            <div>★{rating}</div>
+        </div>
+        <div class="space-y-6 md:space-y-0 md:flex md:justify-between">
+            <div class="flex items-center gap-4">
+                <img src={avatar}
+                    alt="" 
+                    class="w-16 aspect-square object-cover rounded-full"
+                />
+                <div>
+                    <div class="text-xl font-medium text-gray-800">Anfitrión: {host}</div>
+                    <div class="text-md text-gray-500">{years} años como anfitrión</div>
+                </div>
+            </div>
+            <button data-modal-target="login-modal" data-modal-toggle="login-modal" type="button" class="flex py-4 px-16 rounded-3xl text-white bg-red-500 items-center justify-center text-xl font-medium cursor-pointer">
+                Reservar
+            </button>
+        </div>
+	</div>
+</Layout>
