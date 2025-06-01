@@ -1,7 +1,9 @@
 ---
+export const prerender = true;
 import Layout from "../../../layouts/en.astro";
 import "../../../styles/global.css";
 import data from "../../../components/data.json";
+import Comments from "../../../components/Comments.jsx";
 
 export async function getStaticPaths() {
     return data.map(({ room, title, host, img, price, rating, avatar, years }) => {
@@ -44,5 +46,6 @@ const { title, host, img, price, rating, avatar, years } = Astro.props;
                 Reserve
             </button>
         </div>
+        <Comments lang="en"/>
 	</div>
 </Layout>
