@@ -4,6 +4,7 @@ import Layout from "../../../layouts/en.astro";
 import "../../../styles/global.css";
 import data from "../../../components/data.json";
 import Comments from "../../../components/Comments.jsx";
+import SendComment from "../../../components/SendComment.jsx";
 
 export async function getStaticPaths() {
     return data.map(({ room, title, host, img, price, rating, avatar, years }) => {
@@ -47,5 +48,6 @@ const { title, host, img, price, rating, avatar, years } = Astro.props;
             </button>
         </div>
         <Comments lang="en"/>
+        <SendComment client:only="react" lang="en"/>
 	</div>
 </Layout>
