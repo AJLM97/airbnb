@@ -1,6 +1,10 @@
 ---
+export const prerender = false;
 import Login from "../../components/login/en.astro";
 import Soon from "../../components/soon/en.astro";
+
+import NavbarUsername from "./name.jsx";
+import LogInLogOut from "./login-logout.jsx";
 ---
 
 <!-- component -->
@@ -62,27 +66,12 @@ import Soon from "../../components/soon/en.astro";
     <!-- login -->
      <div>
         <button data-modal-target="soon-modal" data-modal-toggle="soon-modal" type="button" class="inline-block py-2 px-3 hover:bg-gray-200 rounded-full">
-            <div class="flex items-center relative cursor-pointer whitespace-nowrap font-medium">Become a host</div>
+            <NavbarUsername client:only="react" lang="en"/>
         </button>
         <a href="/es" class="inline-block py-2 px-3 bg-gray-200 hover:bg-gray-300 rounded-full">
             <div class="flex items-center relative cursor-pointer whitespace-nowrap font-medium">EN</div>
         </a>
-        <button data-modal-target="login-modal" data-modal-toggle="login-modal" type="button" class="h-10 w-10 justify-center inline-flex items-center relative rounded-full bg-gray-200 hover:bg-gray-300">
-            <svg
-                viewBox="0 0 32 32"
-                xmlns="http://www.w3.org/2000/svg"
-                aria-hidden="true"
-                role="presentation"
-                focusable="false"
-                style="display: block; fill: none; height: 16px; width: 16px; stroke: currentcolor; stroke-width: 3; overflow: visible;"
-            >
-                <g fill="none" fill-rule="nonzero">
-                    <path d="m2 16h28"></path>
-                    <path d="m2 24h28"></path>
-                    <path d="m2 8h28"></path>
-                </g>
-            </svg>
-        </button>
+        <LogInLogOut client:only="react" enter="Enter" exit="Exit" lang="en"/>
      </div>
      <!-- end login -->
 </nav>
